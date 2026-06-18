@@ -6,6 +6,7 @@ import { DynamicBackgroundComponent } from './components/dynamic-background/dyna
 import { HeroComponent } from './components/hero/hero.component';
 import { WorkspaceComponent } from './components/workspace/workspace.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
     DynamicBackgroundComponent,
     HeroComponent,
     WorkspaceComponent,
-    FooterComponent
+    FooterComponent,
+    RouterOutlet
   ],
   templateUrl: './app.html'
 })
