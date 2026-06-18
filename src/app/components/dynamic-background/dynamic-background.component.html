@@ -1,0 +1,44 @@
+<!-- Dynamic Background Elements -->
+@if (theme === 'dark') {
+  <!-- Moon Background Element -->
+  <div class="absolute top-12 right-12 md:top-24 md:right-32 pointer-events-none z-0 opacity-90 animate-fade-in">
+    <div class="css-moon"></div>
+  </div>
+
+  <!-- Star Shower Video-like Animation Background -->
+  <div class="absolute inset-0 pointer-events-none z-0 opacity-60">
+    <div class="star-shower">
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+    </div>
+  </div>
+} @else {
+  <!-- Soft Day Sky Gradient -->
+  <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-b from-[#38bdf8]/50 via-[#7dd3fc]/30 to-transparent opacity-100"></div>
+
+  <!-- Sun Background Element -->
+  <div class="absolute top-12 right-12 md:top-24 md:right-32 pointer-events-none z-0 opacity-90 animate-fade-in">
+    <div class="css-sun"></div>
+  </div>
+
+  <!-- Soft Clouds Background -->
+  <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="cloud-container">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+      <div class="cloud cloud-4"></div>
+    </div>
+    
+    <!-- Flying Seagulls -->
+    <div class="seagull seagull-1"></div>
+    <div class="seagull seagull-2"></div>
+    <div class="seagull seagull-3"></div>
+  </div>
+}

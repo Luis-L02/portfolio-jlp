@@ -1,0 +1,264 @@
+@import 'tailwindcss';
+@import 'primeicons/primeicons.css';
+
+:root {
+  /* Semantic design system variables - Centralized Blue Color Palette */
+  --bg-primary: #050d1a;       /* Very dark midnight blue */
+  --bg-secondary: #0a162b;     /* Muted dark ocean blue */
+  --border-muted: #172a45;     /* Steel blue border */
+  --text-title: #f0f5ff;       /* Crisp ice blue-white */
+  --text-body: #8ba2c0;        /* Soft slate-blue body text */
+  --text-muted: #435b7a;       /* Muted blue-gray */
+  --accent-primary: #216ce6;   /* Rich royal blue accent */
+  --accent-hover: #7baaff;     /* Soft ice-blue hover state */
+}
+
+/* Light Theme Overrides */
+:root.light-theme {
+  --bg-primary: #f8fafc;       /* Clean off-white */
+  --bg-secondary: #f1f5f9;     /* Soft slate gray */
+  --border-muted: #cbd5e1;     /* Distinct light border */
+  --text-title: #0f172a;       /* Dark slate for titles */
+  --text-body: #475569;        /* Medium slate for body */
+  --text-muted: #94a3b8;       /* Lighter text for secondary elements */
+  --accent-primary: #f59e0b;   /* Warm amber/orange accent */
+  --accent-hover: #d97706;     /* Darker amber on hover */
+}
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-border-muted: var(--border-muted);
+  --color-text-title: var(--text-title);
+  --color-text-body: var(--text-body);
+  --color-text-muted: var(--text-muted);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-hover: var(--accent-hover);
+}
+
+/* Custom transitions and animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Smooth transition for active elements */
+button, a, input, select, textarea, .group {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Scrollbar styling for horizontal scrollable cards */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 5px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--border-muted);
+  border-radius: 9999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Hide scrollbar defaults */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Realistic Blue Gas Flame 3D Rings Animation */
+@keyframes flameMorph {
+  0%, 100% {
+    border-radius: 50% 48% 52% 50% / 48% 50% 50% 52%;
+    transform: rotateX(74deg) rotateY(-6deg) rotateZ(0deg) scale(1);
+    filter: blur(1.5px);
+    /* Deep electric blue outer flame transitioning to indigo at the edge */
+    box-shadow: 0 0 15px #1e40af, 
+                0 0 30px rgba(79, 70, 229, 0.5), 
+                inset 0 0 10px #0284c7;
+  }
+  33% {
+    border-radius: 48% 52% 50% 48% / 50% 52% 48% 50%;
+    transform: rotateX(74deg) rotateY(-6deg) rotateZ(120deg) scale(1.02);
+    filter: blur(2px);
+    box-shadow: 0 0 20px #2563eb, 
+                0 0 35px rgba(79, 70, 229, 0.6), 
+                inset 0 0 15px #38bdf8;
+  }
+  66% {
+    border-radius: 52% 48% 48% 52% / 52% 48% 52% 48%;
+    transform: rotateX(74deg) rotateY(-6deg) rotateZ(240deg) scale(0.98);
+    filter: blur(1.8px);
+    box-shadow: 0 0 18px #1d4ed8, 
+                0 0 28px rgba(79, 70, 229, 0.4), 
+                inset 0 0 12px #0ea5e9;
+  }
+}
+
+@keyframes flameMorphCounter {
+  0%, 100% {
+    border-radius: 48% 50% 52% 48% / 50% 48% 52% 50%;
+    transform: rotateX(74deg) rotateY(-6deg) rotateZ(360deg) scale(0.97);
+    filter: blur(2px);
+    /* Hot cyan inner core with bright white-hot center spark */
+    box-shadow: 0 0 14px #38bdf8, 
+                0 0 25px #ffffff, 
+                inset 0 0 10px #1e40af;
+  }
+  50% {
+    border-radius: 52% 48% 50% 52% / 48% 52% 48% 50%;
+    transform: rotateX(74deg) rotateY(-6deg) rotateZ(180deg) scale(1.03);
+    filter: blur(1.5px);
+    box-shadow: 0 0 18px #0ea5e9, 
+                0 0 30px #ffffff, 
+                inset 0 0 12px #2563eb;
+  }
+}
+
+.fire-ring-pure-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  perspective: 800px;
+}
+
+/* Outer electric blue/indigo gas flame layer */
+.fire-ring-pure-layer-1 {
+  position: absolute;
+  width: 122%;
+  height: 155%;
+  border: 2px solid #2563eb;
+  background: transparent;
+  animation: flameMorph 4.5s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Inner hot cyan/white gas core layer */
+.fire-ring-pure-layer-2 {
+  position: absolute;
+  width: 112%;
+  height: 140%;
+  border: 1.5px solid #38bdf8;
+  background: transparent;
+  animation: flameMorphCounter 3s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.logo-text-pure-3d {
+  position: relative;
+  z-index: 2;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-shadow: 0 0 12px rgba(5, 13, 26, 0.98), 0 0 5px #38bdf8;
+  transform: translateZ(10px);
+}
+
+/* Star Shower Animation (Video-like background) */
+.star-shower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(135deg);
+  z-index: 0;
+}
+
+.shooting-star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  background: linear-gradient(-45deg, #38bdf8, rgba(0, 0, 255, 0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px #38bdf8);
+  animation: tail 3s ease-in-out infinite, shooting 3s ease-in-out infinite;
+}
+
+.shooting-star::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #38bdf8, rgba(0, 0, 255, 0));
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 3s ease-in-out infinite;
+}
+
+.shooting-star::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #38bdf8, rgba(0, 0, 255, 0));
+  transform: translateX(50%) rotateZ(-45deg);
+  border-radius: 100%;
+  animation: shining 3s ease-in-out infinite;
+}
+
+.shooting-star:nth-child(1) { top: 0; left: 10%; animation-delay: 0s; }
+.shooting-star:nth-child(1)::before, .shooting-star:nth-child(1)::after { animation-delay: 0s; }
+
+.shooting-star:nth-child(2) { top: 10%; left: 80%; animation-delay: 1.2s; }
+.shooting-star:nth-child(2)::before, .shooting-star:nth-child(2)::after { animation-delay: 1.2s; }
+
+.shooting-star:nth-child(3) { top: 30%; left: 30%; animation-delay: 0.4s; }
+.shooting-star:nth-child(3)::before, .shooting-star:nth-child(3)::after { animation-delay: 0.4s; }
+
+.shooting-star:nth-child(4) { top: 40%; left: 90%; animation-delay: 1.8s; }
+.shooting-star:nth-child(4)::before, .shooting-star:nth-child(4)::after { animation-delay: 1.8s; }
+
+.shooting-star:nth-child(5) { top: 60%; left: 20%; animation-delay: 0.8s; }
+.shooting-star:nth-child(5)::before, .shooting-star:nth-child(5)::after { animation-delay: 0.8s; }
+
+.shooting-star:nth-child(6) { top: 80%; left: 70%; animation-delay: 2.5s; }
+.shooting-star:nth-child(6)::before, .shooting-star:nth-child(6)::after { animation-delay: 2.5s; }
+
+.shooting-star:nth-child(7) { top: 20%; left: 50%; animation-delay: 0.6s; }
+.shooting-star:nth-child(7)::before, .shooting-star:nth-child(7)::after { animation-delay: 0.6s; }
+
+.shooting-star:nth-child(8) { top: 90%; left: 40%; animation-delay: 1.5s; }
+.shooting-star:nth-child(8)::before, .shooting-star:nth-child(8)::after { animation-delay: 1.5s; }
+
+@keyframes tail {
+  0% { width: 0; }
+  30% { width: 100px; }
+  100% { width: 0; }
+}
+
+@keyframes shining {
+  0% { width: 0; }
+  50% { width: 30px; }
+  100% { width: 0; }
+}
+
+@keyframes shooting {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(300px); }
+}

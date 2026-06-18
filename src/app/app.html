@@ -1,0 +1,18 @@
+<!-- App Root Container -->
+<div class="min-h-screen bg-bg-primary text-text-body font-sans selection:bg-accent-primary/30 selection:text-text-title transition-colors duration-500 overflow-hidden relative">
+  
+  <!-- Subtle Ambient Gradients (Base App Level) -->
+  <div class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-accent-primary/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+  <div class="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] bg-border-muted/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+
+  <!-- Modular UI Architecture -->
+  <app-header />
+  <app-dynamic-background [theme]="themeService.theme()" />
+
+  <!-- Main Content -->
+  <main class="relative z-10 w-full h-full overflow-y-auto overflow-x-hidden">
+    <app-hero />
+    <app-workspace />
+    <app-footer />
+  </main>
+</div>

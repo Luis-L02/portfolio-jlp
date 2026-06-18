@@ -1,0 +1,100 @@
+{
+  "HEADER": {
+    "TITLE": "José Luis López Pérez",
+    "ABOUT": "About Me",
+    "EXPERIENCE": "Experience",
+    "PROJECTS": "Projects & Education",
+    "LANGUAGE": "Language"
+  },
+  "HERO": {
+    "WELCOME": "Hi, I'm",
+    "NAME": "José Luis López Pérez",
+    "ROLE": "Full Stack Developer & Systems Engineer",
+    "SUBTITLE": "End-to-end software development. Dynamic interfaces, microservices, vector databases, and Artificial Intelligence integration.",
+    "CV_BUTTON": "Download CV",
+    "CONTACT_BUTTON": "Contact Me"
+  },
+  "ABOUT": {
+    "TITLE": "Professional Profile",
+    "BIO": "Full Stack Developer and Systems Engineer with experience in building end-to-end software. Versatile technical profile ranging from the creation of dynamic interfaces in Angular and React, to backend robustness with Spring Boot and Node.js. Passionate about architectural innovation, with real experience implementing microservice architectures, on-premise infrastructure, and data contextualization for AI models. Self-driven learner with strong analytical thinking and adaptability to solve complex software engineering challenges.",
+    "SKILLS": "Technical Skills",
+    "FRONTEND": "Frontend",
+    "BACKEND": "Backend",
+    "DATABASES": "Databases",
+    "CLOUD": "Cloud & Servers",
+    "TOOLS": "Tools",
+    "METHODOLOGIES": "Methodologies",
+    "LANGUAGES": "Languages",
+    "LANGUAGES_VAL": "Intermediate English B2 Cambridge"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Professional Experience",
+    "PRESENT": "Present",
+    "COPPEL": {
+      "ROLE": "Programmer",
+      "COMPANY": "Coppel S.A. de C.V.",
+      "DATE": "04/2026 - Present",
+      "PLACE": "Culiacán, Sinaloa",
+      "DESC1": "AI Development: Integration of AI capabilities through the design and contextualization of vector databases using pgvector, increasing retrieval accuracy.",
+      "DESC2": "Agile Methodologies at Scale: Active collaboration within the SAFe (Scaled Agile Framework), planning and incrementally delivering business-critical features in cross-functional teams.",
+      "DESC3": "Optimization & Support: Maintenance and optimization of legacy systems, quickly adapting to complex business rules and enterprise architectural standards."
+    },
+    "GAMAN": {
+      "ROLE": "Jr. Software Developer",
+      "COMPANY": "Gaman Solutions",
+      "DATE": "10/2025 - 04/2026",
+      "PLACE": "Culiacán, Sinaloa",
+      "DESC1": "Full Stack Development & Value Delivery: End-to-End implementation of new business features, translating frontend requirements in Angular to backend logic in Express.",
+      "DESC2": "Database Performance Tuning: Response time reduction by refactoring queries in SQL Server and Sequelize, alongside strategic indexing.",
+      "DESC3": "Corrective Maintenance & Stability: Effective diagnosis and resolution of bugs in critical existing modules, securing operational continuity."
+    },
+    "CLARITI": {
+      "ROLE": "Jr. Web Developer",
+      "COMPANY": "Clariti México",
+      "DATE": "03/2025 - 08/2025",
+      "PLACE": "Culiacán, Sinaloa",
+      "DESC1": "Full Stack Dev & Critical Optimization: Led the refactoring of search queries and database normalization, cutting down response times from 7s to under 1s.",
+      "DESC2": "Process Automation: Designed and deployed a Node.js cron microservice to automate late payment charges, sanitizing and migrating over 16,000 records."
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Featured Work & Projects",
+    "SUBTITLE": "Swipe to view featured projects and academic research.",
+    "DEMO_BUTTON": "View demo",
+    "ITEMS": {
+      "DEEPCROOP": {
+        "TITLE": "DEEPCROOP",
+        "SUBTITLE": "Spectral Image Management for Precision Agriculture",
+        "DESC": "Decoupled system architecture with a Laravel/React Core and Python microservices. Used dockerized MinIO for object storage and spectral image analysis (NDVI, NDWI) for crop water stress."
+      },
+      "ECOMMERCE": {
+        "TITLE": "Integrated E-Commerce",
+        "SUBTITLE": "Microservices Architecture",
+        "DESC": "Premium commerce platform mockup with payment gateway integrations, backend Spring Boot, and reactive Angular frontend with high-performance persistence."
+      },
+      "TASK": {
+        "TITLE": "Kanban Task Manager",
+        "SUBTITLE": "Agile Productivity",
+        "DESC": "Collaborative interactive agile board featuring drag-and-drop, optimized status flow, and real-time persistence with PostgreSQL databases."
+      },
+      "ANALYTICS": {
+        "TITLE": "Corporate Dashboard",
+        "SUBTITLE": "Data Visualization",
+        "DESC": "Real-time metrics tracking and widget integration, native dark mode, and rendering optimization for high-density charts."
+      }
+    }
+  },
+  "EDUCATION": {
+    "TITLE": "Education",
+    "ITC": {
+      "DEGREE": "B.S. in Computer Systems Engineering",
+      "SPECIALTY": "Software Engineering Specialty",
+      "SCHOOL": "Instituto Tecnológico de Culiacán",
+      "DATE": "08/2021 - 12/2025",
+      "PLACE": "Culiacán, Sinaloa"
+    }
+  },
+  "FOOTER": {
+    "TEXT": "Designed with a minimalist focus by José Luis López Pérez. © 2026."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "HEADER": {
+    "TITLE": "José Luis López Pérez",
+    "ABOUT": "Sobre Mí",
+    "EXPERIENCE": "Experiencia",
+    "PROJECTS": "Proyectos & Educación",
+    "LANGUAGE": "Idioma"
+  },
+  "HERO": {
+    "WELCOME": "Hola, soy",
+    "NAME": "José Luis López Pérez",
+    "ROLE": "Desarrollador Full Stack & Ingeniero en Sistemas",
+    "SUBTITLE": "Desarrollo de software de extremo a extremo. Interfaces dinámicas, microservicios, bases de datos vectoriales e integración de Inteligencia Artificial.",
+    "CV_BUTTON": "Descargar CV",
+    "CONTACT_BUTTON": "Contactar"
+  },
+  "ABOUT": {
+    "TITLE": "Perfil Profesional",
+    "BIO": "Desarrollador Full Stack e Ingeniero en Sistemas con experiencia en la construcción de software de extremo a extremo. Con un perfil técnico versátil que abarca desde la creación de interfaces dinámicas en Angular y React, hasta la robustez en el backend con Spring Boot y Node.js. Apasionado por la innovación arquitectónica, con experiencia real implementando arquitecturas de microservicios, infraestructura local y contextualización de datos para modelos de Inteligencia Artificial. Destaco por mi rápida curva de aprendizaje, pensamiento analítico y adaptabilidad para resolver problemas complejos de ingeniería de software.",
+    "SKILLS": "Habilidades Técnicas",
+    "FRONTEND": "Frontend",
+    "BACKEND": "Backend",
+    "DATABASES": "Bases de Datos",
+    "CLOUD": "Nube & Servidores",
+    "TOOLS": "Herramientas",
+    "METHODOLOGIES": "Metodologías",
+    "LANGUAGES": "Idiomas",
+    "LANGUAGES_VAL": "Inglés Intermedio B2 Cambridge"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experiencia Profesional",
+    "PRESENT": "Actualidad",
+    "COPPEL": {
+      "ROLE": "Programador",
+      "COMPANY": "Coppel S.A. de C.V.",
+      "DATE": "04/2026 - Actualidad",
+      "PLACE": "Culiacán, Sinaloa",
+      "DESC1": "Desarrollo con Inteligencia Artificial: Integración de capacidades de IA mediante el diseño y contextualización de bases de datos vectoriales utilizando pgvector, mejorando la precisión en la recuperación de información.",
+      "DESC2": "Metodologías Ágiles a Escala: Colaboración activa bajo el marco SAFe (Scaled Agile Framework), participando en la planeación y entrega incremental de funcionalidades críticas para el negocio en equipos multidisciplinarios.",
+      "DESC3": "Optimización y Soporte: Mantenimiento y optimización de sistemas legados, logrando una rápida adaptación a las reglas de negocio complejas y estándares de arquitectura de la empresa."
+    },
+    "GAMAN": {
+      "ROLE": "Desarrollador de Software Jr.",
+      "COMPANY": "Gaman Solutions",
+      "DATE": "10/2025 - 04/2026",
+      "PLACE": "Culiacán, Sinaloa",
+      "DESC1": "Desarrollo Full Stack & Entrega de Valor: Implementación End-to-End de nuevas funcionalidades de negocio, traduciendo requerimientos desde la interfaz en Angular hasta la lógica en Express.",
+      "DESC2": "Optimización de Rendimiento de Base de Datos: Reducción de tiempos de respuesta mediante la refactorización de consultas en SQL Server y Sequelize y la implementación estratégica de índices.",
+      "DESC3": "Mantenimiento Correctivo & Estabilidad: Diagnóstico y resolución eficaz de bugs en módulos críticos existentes, garantizando la continuidad operativa y elevando la estabilidad del software."
+    },
+    "CLARITI": {
+      "ROLE": "Desarrollador Web Jr.",
+      "COMPANY": "Clariti México",
+      "DATE": "03/2025 - 08/2025",
+      "PLACE": "Culiacán, Sinaloa",
+      "DESC1": "Desarrollo Full Stack y Optimización Crítica: Lideré la refactorización de rutas de búsqueda y normalización de bases de datos, logrando una reducción de tiempos de respuesta de 7s a menos de 1s.",
+      "DESC2": "Automatización de Procesos: Diseñé e implementé un microservicio en Node.js (cron) para automatizar el 100% de la aplicación de pagos y cargos moratorios, sanitizando y migrando más de 16,000 registros."
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos Destacados",
+    "SUBTITLE": "Desliza para ver proyectos destacados y trabajos académicos importantes.",
+    "DEMO_BUTTON": "Ver demo",
+    "ITEMS": {
+      "DEEPCROOP": {
+        "TITLE": "DEEPCROOP",
+        "SUBTITLE": "Plataforma de Imágenes Espectrales para Agricultura",
+        "DESC": "Diseño de sistema desacoplado con Core en Laravel/React y microservicios en Python. Uso de MinIO para almacenamiento y procesamiento de mapas de calor para análisis de estrés hídrico de cultivos (NDVI, NDWI)."
+      },
+      "ECOMMERCE": {
+        "TITLE": "E-Commerce Integrado",
+        "SUBTITLE": "Arquitectura de Microservicios",
+        "DESC": "Mockup de plataforma comercial moderna con pasarela de pagos integrada en backend Spring Boot y frontend reactivo en Angular con persistencia de alto rendimiento."
+      },
+      "TASK": {
+        "TITLE": "Gestor de Tareas Kanban",
+        "SUBTITLE": "Productividad Ágil",
+        "DESC": "Tablero ágil colaborativo e interactivo con soporte de drag-and-drop, flujos optimizados de estados y persistencia en tiempo real en base de datos PostgreSQL."
+      },
+      "ANALYTICS": {
+        "TITLE": "Dashboard Corporativo",
+        "SUBTITLE": "Visualización de Datos",
+        "DESC": "Monitoreo e integración de métricas en tiempo real, widgets personalizables, modo oscuro nativo y optimización de renderizado de gráficos de alto volumen."
+      }
+    }
+  },
+  "EDUCATION": {
+    "TITLE": "Educación",
+    "ITC": {
+      "DEGREE": "Ingeniería en Sistemas Computacionales",
+      "SPECIALTY": "Especialidad en Ingeniería de Software",
+      "SCHOOL": "Instituto Tecnológico de Culiacán",
+      "DATE": "08/2021 - 12/2025",
+      "PLACE": "Culiacán, Sinaloa"
+    }
+  },
+  "FOOTER": {
+    "TEXT": "Diseñado con enfoque minimalista por José Luis López Pérez. © 2026."
+  }
+}

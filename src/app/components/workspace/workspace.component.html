@@ -1,0 +1,31 @@
+<section id="workspace" class="max-w-4xl mx-auto px-6 py-12 border-t border-border-muted transition-all duration-300">
+  <!-- Premium Minimalist Tab Switcher -->
+  <div class="flex justify-center mb-16 animate-fade-in">
+    <div class="bg-bg-secondary/40 border border-border-muted p-1 rounded-xl flex space-x-1 max-w-md w-full shadow-lg shadow-black/25">
+      <button 
+        (click)="activeTab.set(0)"
+        [class.bg-accent-primary]="activeTab() === 0"
+        [class.text-text-title]="activeTab() === 0"
+        [class.text-text-body]="activeTab() !== 0"
+        [class.hover:text-accent-primary]="activeTab() !== 0"
+        class="flex-1 py-2.5 px-4 text-xs font-bold uppercase tracking-wider rounded-lg transition-all duration-300 focus:outline-none cursor-pointer">
+        {{ 'PROJECTS.TITLE' | translate }}
+      </button>
+      <button 
+        (click)="activeTab.set(1)"
+        [class.bg-accent-primary]="activeTab() === 1"
+        [class.text-text-title]="activeTab() === 1"
+        [class.text-text-body]="activeTab() !== 1"
+        [class.hover:text-accent-primary]="activeTab() !== 1"
+        class="flex-1 py-2.5 px-4 text-xs font-bold uppercase tracking-wider rounded-lg transition-all duration-300 focus:outline-none cursor-pointer">
+        {{ 'EXPERIENCE.TITLE' | translate }}
+      </button>
+    </div>
+  </div>
+
+  @if (activeTab() === 0) {
+    <app-project-list />
+  } @else {
+    <app-experience-timeline />
+  }
+</section>

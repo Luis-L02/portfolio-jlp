@@ -1,0 +1,207 @@
+/* ====================================================
+   DARK THEME ANIMATIONS (MOON & STARS)
+   ==================================================== */
+
+.css-moon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #e2e8f0 0%, #cbd5e1 40%, #64748b 90%, #334155 100%);
+  box-shadow: 
+    0 0 40px rgba(148, 163, 184, 0.4),
+    0 0 100px rgba(100, 116, 139, 0.2),
+    inset -10px -10px 20px rgba(15, 23, 42, 0.6),
+    inset 10px 10px 20px rgba(255, 255, 255, 0.8);
+  animation: floatMoon 6s ease-in-out infinite;
+  position: relative;
+}
+
+.css-moon::before {
+  content: '';
+  position: absolute;
+  top: 25%; left: 30%;
+  width: 25px; height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+  box-shadow: inset 2px 2px 5px rgba(15, 23, 42, 0.1);
+}
+
+.css-moon::after {
+  content: '';
+  position: absolute;
+  top: 55%; left: 60%;
+  width: 15px; height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.2) 0%, rgba(15, 23, 42, 0) 70%);
+  box-shadow: inset 1px 1px 3px rgba(15, 23, 42, 0.1);
+}
+
+@keyframes floatMoon {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+.star-shower {
+  position: absolute;
+  top: -50%; left: -50%; width: 200%; height: 200%;
+  transform: rotate(-30deg); /* Steeper, more cinematic angle */
+  pointer-events: none;
+}
+
+.shooting-star {
+  position: absolute;
+  width: 3px; height: 3px;
+  background: #f0f5ff;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 6px #f0f5ff);
+  /* Stars move strictly along the X axis */
+  animation: shooting 4s ease-in-out infinite;
+}
+
+/* The tail extends to the right (positive X) behind the star */
+.shooting-star::before {
+  content: ''; 
+  position: absolute; 
+  top: 50%; 
+  right: 50%;
+  transform: translateY(-50%); 
+  height: 1px;
+  background: linear-gradient(to right, rgba(255,255,255,0.8), transparent);
+  animation: tail 4s ease-in-out infinite;
+}
+
+/* Scatter stars in the right half so they fly across the center */
+.shooting-star:nth-child(1) { top: 20%; left: 80%; animation-delay: 0s; }
+.shooting-star:nth-child(2) { top: 40%; left: 70%; animation-delay: 1.2s; }
+.shooting-star:nth-child(3) { top: 60%; left: 90%; animation-delay: 2.5s; }
+.shooting-star:nth-child(4) { top: 30%; left: 60%; animation-delay: 0.8s; }
+.shooting-star:nth-child(5) { top: 70%; left: 85%; animation-delay: 3s; }
+.shooting-star:nth-child(6) { top: 10%; left: 65%; animation-delay: 1.5s; }
+.shooting-star:nth-child(7) { top: 50%; left: 75%; animation-delay: 2.1s; }
+.shooting-star:nth-child(8) { top: 80%; left: 95%; animation-delay: 0.4s; }
+
+@keyframes tail {
+  0% { width: 0; }
+  30% { width: 150px; }
+  100% { width: 0; }
+}
+
+@keyframes shooting {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(-150vw); opacity: 0; }
+}
+
+/* ====================================================
+   LIGHT THEME ANIMATIONS (SUN & CLOUDS)
+   ==================================================== */
+
+.css-sun {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #fef08a 25%, #facc15 60%, #eab308 100%);
+  box-shadow: 
+    0 0 50px rgba(253, 224, 71, 0.7),
+    0 0 120px rgba(245, 158, 11, 0.5),
+    inset -15px -15px 30px rgba(202, 138, 4, 0.7),
+    inset 15px 15px 25px rgba(255, 255, 255, 0.9);
+  animation: pulseSun 8s ease-in-out infinite;
+  position: relative;
+}
+
+.css-sun::after {
+  content: '';
+  position: absolute;
+  top: -25%; left: -25%; right: -25%; bottom: -25%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(253, 224, 71, 0.4) 0%, rgba(245, 158, 11, 0.1) 50%, transparent 70%);
+  animation: rotateRays 25s linear infinite;
+  z-index: -1;
+}
+
+@keyframes pulseSun {
+  0%, 100% { transform: scale(1) translateY(0); box-shadow: 0 0 50px rgba(253, 224, 71, 0.7), 0 0 120px rgba(245, 158, 11, 0.5), inset -15px -15px 30px rgba(202, 138, 4, 0.7), inset 15px 15px 25px rgba(255, 255, 255, 0.9); }
+  50% { transform: scale(1.03) translateY(-10px); box-shadow: 0 0 70px rgba(253, 224, 71, 0.9), 0 0 160px rgba(245, 158, 11, 0.7), inset -15px -15px 30px rgba(202, 138, 4, 0.7), inset 15px 15px 25px rgba(255, 255, 255, 1); }
+}
+
+@keyframes rotateRays {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.cloud-container {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%; z-index: 0;
+}
+
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 200px;
+  filter: drop-shadow(0 10px 15px rgba(15, 23, 42, 0.05));
+  animation: floatCloud linear infinite;
+  opacity: 0;
+}
+
+.cloud::before, .cloud::after {
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+
+.cloud-1 { width: 160px; height: 55px; top: 15%; left: -200px; animation-duration: 25s; animation-delay: 0s; }
+.cloud-1::before { width: 75px; height: 75px; top: -35px; left: 25px; }
+.cloud-1::after { width: 95px; height: 95px; top: -45px; left: 70px; }
+
+.cloud-2 { width: 130px; height: 45px; top: 40%; left: -200px; animation-duration: 35s; animation-delay: 8s; transform: scale(0.8); }
+.cloud-2::before { width: 65px; height: 65px; top: -30px; left: 20px; }
+.cloud-2::after { width: 80px; height: 80px; top: -40px; left: 55px; }
+
+.cloud-3 { width: 220px; height: 70px; top: 65%; left: -250px; animation-duration: 30s; animation-delay: 3s; }
+.cloud-3::before { width: 100px; height: 100px; top: -45px; left: 35px; }
+.cloud-3::after { width: 120px; height: 120px; top: -55px; left: 90px; }
+
+.cloud-4 { width: 110px; height: 35px; top: 10%; left: -150px; animation-duration: 20s; animation-delay: 15s; transform: scale(0.6); opacity: 0.7; }
+.cloud-4::before { width: 55px; height: 55px; top: -25px; left: 15px; }
+.cloud-4::after { width: 65px; height: 65px; top: -35px; left: 45px; }
+
+@keyframes floatCloud {
+  0% { left: -20%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 120%; opacity: 0; }
+}
+
+/* ====================================================
+   SEAGULLS ANIMATION
+   ==================================================== */
+.seagull {
+  position: absolute;
+  width: 20px; height: 10px; opacity: 0; z-index: 2;
+  animation: flyRight linear infinite;
+}
+
+.seagull::before, .seagull::after {
+  content: ''; position: absolute; width: 12px; height: 10px;
+  border-top: 2px solid #64748b; border-radius: 50%; top: 0;
+}
+
+.seagull::before { left: 0; transform-origin: right bottom; animation: wingLeft 0.4s ease-in-out infinite alternate; }
+.seagull::after { right: 0; transform-origin: left bottom; animation: wingRight 0.4s ease-in-out infinite alternate; }
+
+.seagull-1 { top: 25%; animation-duration: 18s; animation-delay: 2s; transform: scale(0.9); }
+.seagull-2 { top: 15%; animation-duration: 22s; animation-delay: 10s; transform: scale(0.6); }
+.seagull-3 { top: 35%; animation-duration: 15s; animation-delay: 5s; transform: scale(1.1); }
+
+@keyframes wingLeft { 0% { transform: rotate(15deg); } 100% { transform: rotate(-30deg); } }
+@keyframes wingRight { 0% { transform: rotate(-15deg); } 100% { transform: rotate(30deg); } }
+
+@keyframes flyRight {
+  0% { left: -10%; transform: translateY(0) scale(inherit); opacity: 0; }
+  10% { opacity: 0.8; }
+  50% { transform: translateY(-15px) scale(inherit); }
+  90% { opacity: 0.8; }
+  100% { left: 110%; transform: translateY(10px) scale(inherit); opacity: 0; }
+}

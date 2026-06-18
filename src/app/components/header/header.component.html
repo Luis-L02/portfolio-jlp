@@ -1,0 +1,41 @@
+<header class="fixed top-0 left-0 w-full z-50 bg-bg-primary/75 backdrop-blur-md border-b border-border-muted transition-all duration-300">
+  <nav class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#inicio" class="select-none flex items-center">
+      <span class="text-lg font-bold text-text-title tracking-wider transition-colors duration-300 hover:text-accent-primary">
+        JLLP.DEV
+      </span>
+    </a>
+
+    <div class="flex items-center space-x-4">
+      <!-- Theme Toggle -->
+      <button 
+        (click)="themeService.toggleTheme()" 
+        class="p-1.5 md:p-2 rounded-lg bg-bg-secondary/60 border border-border-muted text-text-title hover:text-accent-primary hover:border-accent-primary transition-all duration-300 focus:outline-none flex items-center justify-center">
+        <i class="pi" [ngClass]="themeService.theme() === 'dark' ? 'pi-sun' : 'pi-moon'" style="font-size: 1.1rem"></i>
+      </button>
+
+      <!-- Language Selector (Homogenized Brand Styling) -->
+      <div class="flex items-center space-x-1 bg-bg-secondary/60 p-1 rounded-lg border border-border-muted">
+      <button 
+        (click)="setLanguage('es')" 
+        [class.bg-accent-primary]="currentLang() === 'es'" 
+        [class.text-text-title]="currentLang() === 'es'" 
+        [class.text-text-body/80]="currentLang() !== 'es'"
+        [class.hover:text-accent-primary]="currentLang() !== 'es'"
+        class="px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer focus:outline-none">
+        ES
+      </button>
+      <button 
+        (click)="setLanguage('en')" 
+        [class.bg-accent-primary]="currentLang() === 'en'" 
+        [class.text-text-title]="currentLang() === 'en'" 
+        [class.text-text-body/80]="currentLang() !== 'en'"
+        [class.hover:text-accent-primary]="currentLang() !== 'en'"
+        class="px-2.5 py-1 rounded text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer focus:outline-none">
+        EN
+      </button>
+      </div>
+    </div>
+  </nav>
+</header>
