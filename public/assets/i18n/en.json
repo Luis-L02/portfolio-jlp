@@ -64,23 +64,23 @@
     "ITEMS": {
       "DEEPCROOP": {
         "TITLE": "DEEPCROOP",
-        "SUBTITLE": "Spectral Image Management for Precision Agriculture",
-        "DESC": "Decoupled system architecture with a Laravel/React Core and Python microservices. Used dockerized MinIO for object storage and spectral image analysis (NDVI, NDWI) for crop water stress."
+        "SUBTITLE": "Coming soon..",
+        "DESC": "Coming soon.."
       },
       "ECOMMERCE": {
         "TITLE": "Integrated E-Commerce",
-        "SUBTITLE": "Microservices Architecture",
-        "DESC": "Premium commerce platform mockup with payment gateway integrations, backend Spring Boot, and reactive Angular frontend with high-performance persistence."
+        "SUBTITLE": "Coming soon..",
+        "DESC": "Coming soon.."
       },
       "TASK": {
         "TITLE": "Kanban Task Manager",
-        "SUBTITLE": "Agile Productivity",
-        "DESC": "Collaborative interactive agile board featuring drag-and-drop, optimized status flow, and real-time persistence with PostgreSQL databases."
+        "SUBTITLE": "Coming soon..",
+        "DESC": "Coming soon.."
       },
       "ANALYTICS": {
         "TITLE": "Corporate Dashboard",
-        "SUBTITLE": "Data Visualization",
-        "DESC": "Real-time metrics tracking and widget integration, native dark mode, and rendering optimization for high-density charts."
+        "SUBTITLE": "Coming soon..",
+        "DESC": "Coming soon.."
       }
     }
   },

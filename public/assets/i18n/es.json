@@ -64,23 +64,23 @@
     "ITEMS": {
       "DEEPCROOP": {
         "TITLE": "DEEPCROOP",
-        "SUBTITLE": "Plataforma de Imágenes Espectrales para Agricultura",
-        "DESC": "Diseño de sistema desacoplado con Core en Laravel/React y microservicios en Python. Uso de MinIO para almacenamiento y procesamiento de mapas de calor para análisis de estrés hídrico de cultivos (NDVI, NDWI)."
+        "SUBTITLE": "Próximamente..",
+        "DESC": "Próximamente.."
       },
       "ECOMMERCE": {
         "TITLE": "E-Commerce Integrado",
-        "SUBTITLE": "Arquitectura de Microservicios",
-        "DESC": "Mockup de plataforma comercial moderna con pasarela de pagos integrada en backend Spring Boot y frontend reactivo en Angular con persistencia de alto rendimiento."
+        "SUBTITLE": "Próximamente..",
+        "DESC": "Próximamente.."
       },
       "TASK": {
         "TITLE": "Gestor de Tareas Kanban",
-        "SUBTITLE": "Productividad Ágil",
-        "DESC": "Tablero ágil colaborativo e interactivo con soporte de drag-and-drop, flujos optimizados de estados y persistencia en tiempo real en base de datos PostgreSQL."
+        "SUBTITLE": "Próximamente..",
+        "DESC": "Próximamente.."
       },
       "ANALYTICS": {
         "TITLE": "Dashboard Corporativo",
-        "SUBTITLE": "Visualización de Datos",
-        "DESC": "Monitoreo e integración de métricas en tiempo real, widgets personalizables, modo oscuro nativo y optimización de renderizado de gráficos de alto volumen."
+        "SUBTITLE": "Próximamente..",
+        "DESC": "Próximamente.."
       }
     }
   },
