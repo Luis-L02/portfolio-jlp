@@ -9,14 +9,14 @@
   "HERO": {
     "WELCOME": "Hola, soy",
     "NAME": "José Luis López Pérez",
-    "ROLE": "Desarrollador Full Stack & Ingeniero en Sistemas",
+    "ROLE": "Desarrollador de Software & Ingeniero en Sistemas",
     "SUBTITLE": "Desarrollo de software de extremo a extremo. Interfaces dinámicas, microservicios, bases de datos vectoriales e integración de Inteligencia Artificial.",
     "CV_BUTTON": "Descargar CV",
     "CONTACT_BUTTON": "Contactar"
   },
   "ABOUT": {
     "TITLE": "Perfil Profesional",
-    "BIO": "Desarrollador Full Stack e Ingeniero en Sistemas con experiencia en la construcción de software de extremo a extremo. Con un perfil técnico versátil que abarca desde la creación de interfaces dinámicas en Angular y React, hasta la robustez en el backend con Spring Boot y Node.js. Apasionado por la innovación arquitectónica, con experiencia real implementando arquitecturas de microservicios, infraestructura local y contextualización de datos para modelos de Inteligencia Artificial. Destaco por mi rápida curva de aprendizaje, pensamiento analítico y adaptabilidad para resolver problemas complejos de ingeniería de software.",
+    "BIO": "Desarrollador de Software e Ingeniero en Sistemas con experiencia en la construcción de software de extremo a extremo. Con un perfil técnico versátil que abarca desde la creación de interfaces dinámicas en Angular y React, hasta la robustez en el backend con Spring Boot y Node.js. Apasionado por la innovación arquitectónica, con experiencia real implementando arquitecturas de microservicios, infraestructura local y contextualización de datos para modelos de Inteligencia Artificial. Destaco por mi rápida curva de aprendizaje, pensamiento analítico y adaptabilidad para resolver problemas complejos de ingeniería de software.",
     "SKILLS": "Habilidades Técnicas",
     "FRONTEND": "Frontend",
     "BACKEND": "Backend",
@@ -44,7 +44,7 @@
       "COMPANY": "Gaman Solutions",
       "DATE": "10/2025 - 04/2026",
       "PLACE": "Culiacán, Sinaloa",
-      "DESC1": "Desarrollo Full Stack & Entrega de Valor: Implementación End-to-End de nuevas funcionalidades de negocio, traduciendo requerimientos desde la interfaz en Angular hasta la lógica en Express.",
+      "DESC1": "Desarrollo de Software & Entrega de Valor: Implementación End-to-End de nuevas funcionalidades de negocio, traduciendo requerimientos desde la interfaz en Angular hasta la lógica en Express.",
       "DESC2": "Optimización de Rendimiento de Base de Datos: Reducción de tiempos de respuesta mediante la refactorización de consultas en SQL Server y Sequelize y la implementación estratégica de índices.",
       "DESC3": "Mantenimiento Correctivo & Estabilidad: Diagnóstico y resolución eficaz de bugs en módulos críticos existentes, garantizando la continuidad operativa y elevando la estabilidad del software."
     },
@@ -53,7 +53,7 @@
       "COMPANY": "Clariti México",
       "DATE": "03/2025 - 08/2025",
       "PLACE": "Culiacán, Sinaloa",
-      "DESC1": "Desarrollo Full Stack y Optimización Crítica: Lideré la refactorización de rutas de búsqueda y normalización de bases de datos, logrando una reducción de tiempos de respuesta de 7s a menos de 1s.",
+      "DESC1": "Desarrollo de Software y Optimización Crítica: Lideré la refactorización de rutas de búsqueda y normalización de bases de datos, logrando una reducción de tiempos de respuesta de 7s a menos de 1s.",
       "DESC2": "Automatización de Procesos: Diseñé e implementé un microservicio en Node.js (cron) para automatizar el 100% de la aplicación de pagos y cargos moratorios, sanitizando y migrando más de 16,000 registros."
     }
   },
