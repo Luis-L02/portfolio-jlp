@@ -9,14 +9,14 @@
   "HERO": {
     "WELCOME": "Hi, I'm",
     "NAME": "José Luis López Pérez",
-    "ROLE": "Software Developer & Systems Engineer",
+    "ROLE": "Software Engineer & Systems Engineer",
     "SUBTITLE": "End-to-end software development. Dynamic interfaces, microservices, vector databases, and Artificial Intelligence integration.",
     "CV_BUTTON": "Download CV",
     "CONTACT_BUTTON": "Contact Me"
   },
   "ABOUT": {
     "TITLE": "Professional Profile",
-    "BIO": "Software Developer and Systems Engineer with experience in building end-to-end software. Versatile technical profile ranging from the creation of dynamic interfaces in Angular and React, to backend robustness with Spring Boot and Node.js. Passionate about architectural innovation, with real experience implementing microservice architectures, on-premise infrastructure, and data contextualization for AI models. Self-driven learner with strong analytical thinking and adaptability to solve complex software engineering challenges.",
+    "BIO": "Software Engineer and Systems Engineer with experience in building end-to-end software. Versatile technical profile ranging from the creation of dynamic interfaces in Angular and React, to backend robustness with Spring Boot and Node.js. Passionate about architectural innovation, with real experience implementing microservice architectures, on-premise infrastructure, and data contextualization for AI models. Self-driven learner with strong analytical thinking and adaptability to solve complex software engineering challenges.",
     "SKILLS": "Technical Skills",
     "FRONTEND": "Frontend",
     "BACKEND": "Backend",
