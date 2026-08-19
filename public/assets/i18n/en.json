@@ -31,7 +31,7 @@
     "TITLE": "Professional Experience",
     "PRESENT": "Present",
     "COPPEL": {
-      "ROLE": "Programmer",
+      "ROLE": "Software Developer",
       "COMPANY": "Coppel S.A. de C.V.",
       "DATE": "04/2026 - Present",
       "PLACE": "Culiacán, Sinaloa",
@@ -60,6 +60,7 @@
   "PROJECTS": {
     "TITLE": "Featured Work & Projects",
     "SUBTITLE": "Swipe to view featured projects and academic research.",
+    "SWIPE_HINT": "Swipe to explore",
     "DEMO_BUTTON": "View demo",
     "ITEMS": {
       "DEEPCROOP": {

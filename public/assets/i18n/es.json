@@ -31,7 +31,7 @@
     "TITLE": "Experiencia Profesional",
     "PRESENT": "Actualidad",
     "COPPEL": {
-      "ROLE": "Programador",
+      "ROLE": "Desarrollador de Software",
       "COMPANY": "Coppel S.A. de C.V.",
       "DATE": "04/2026 - Actualidad",
       "PLACE": "Culiacán, Sinaloa",
@@ -60,6 +60,7 @@
   "PROJECTS": {
     "TITLE": "Proyectos Destacados",
     "SUBTITLE": "Desliza para ver proyectos destacados y trabajos académicos importantes.",
+    "SWIPE_HINT": "Desliza para explorar",
     "DEMO_BUTTON": "Ver demo",
     "ITEMS": {
       "DEEPCROOP": {
