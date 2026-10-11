@@ -1,0 +1,25 @@
+name: Deploy Portfolio JLP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Build Angular application
+        run: npm run build
+
+      - name: Deploy to production webroot
+        run: |
+          mkdir -p "/media/almacenamiento/projects/repositories/Portfolio JLP/dist"
+          rsync -av --delete dist/ "/media/almacenamiento/projects/repositories/Portfolio JLP/dist/"
+          chmod -R o+rx "/media/almacenamiento/projects/repositories/Portfolio JLP/dist"

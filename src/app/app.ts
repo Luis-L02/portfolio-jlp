@@ -27,7 +27,7 @@ export class App {
 
   constructor() {
     this.translate.addLangs(['es', 'en']);
-    this.translate.setFallbackLang('es');
-    this.translate.use('es');
+    this.translate.setFallbackLang('en');
+    this.translate.use('en');
   }
 }
