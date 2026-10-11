@@ -20,7 +20,7 @@ export const appConfig: ApplicationConfig = {
     }),
     provideTranslateHttpLoader({
       prefix: './assets/i18n/',
-      suffix: '.json?v=1.0.9'
+      suffix: '.json?v=1.0.10'
     }),
     providePrimeNG({
       theme: {
