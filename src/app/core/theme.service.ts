@@ -11,7 +11,7 @@ export class ThemeService {
   }
 
   private initThemeDetection(): void {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') return;
 
     const mediaQuery = window.matchMedia('(prefers-color-scheme: light)');
     this.applyTheme(mediaQuery.matches ? 'light' : 'dark');

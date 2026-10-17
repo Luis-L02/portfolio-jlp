@@ -3,9 +3,42 @@
   "extends": [
     "config:recommended"
   ],
+  "baseBranches": [
+    "develop"
+  ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "npm": {
     "npmrc": "legacy-peer-deps=true\n"
-  }
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": false
+    },
+    {
+      "matchPackageNames": [
+        "typescript"
+      ],
+      "allowedVersions": "<6.1.0"
+    },
+    {
+      "groupName": "Angular Packages",
+      "matchPackagePatterns": [
+        "^@angular/"
+      ]
+    }
+  ]
 }
