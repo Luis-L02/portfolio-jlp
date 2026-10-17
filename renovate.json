@@ -3,6 +3,8 @@
   "extends": [
     "config:recommended"
   ],
+  "mode": "full",
   "prCreation": "immediate",
-  "dependencyDashboard": true
+  "dependencyDashboard": true,
+  "dependencyDashboardApproval": false
 }
