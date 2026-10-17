@@ -35,6 +35,19 @@
       "allowedVersions": "<6.1.0"
     },
     {
+      "matchPackageNames": [
+        "primeng",
+        "@primeng/themes"
+      ],
+      "allowedVersions": "<22.0.0"
+    },
+    {
+      "matchPackageNames": [
+        "@primeuix/themes"
+      ],
+      "allowedVersions": "<3.0.0"
+    },
+    {
       "groupName": "Angular Packages",
       "matchPackagePatterns": [
         "^@angular/"
