@@ -3,8 +3,9 @@
   "extends": [
     "config:recommended"
   ],
-  "mode": "full",
-  "prCreation": "immediate",
-  "dependencyDashboard": true,
-  "dependencyDashboardApproval": false
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  "npm": {
+    "npmrc": "legacy-peer-deps=true\n"
+  }
 }
